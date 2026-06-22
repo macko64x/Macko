@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "description": "Confirmed future bookings inherited from Campfire Ranch at dissolution. Single structured source of truth for guest-rescue outreach, balance collection, and migration into whatever booking system SIG settles on.",
+    "source": "Cloudbeds export (Campfire Ranch), as of 2026-06-10",
+    "status": "UNRECONCILED — verify every figure against the official Cloudbeds export once SIG has credentials. Minor inconsistencies exist between this snapshot and CLAUDE.md priority lists.",
+    "contains_pii": true,
+    "pii_note": "Guest names and financial balances. Keep this repository private. Do not transmit this file to any third party without Matt's explicit go-ahead.",
+    "currency": "USD",
+    "totals": {
+      "confirmed_future_bookings": 29,
+      "gross_booking_value": 125306,
+      "campfire_collected": 92218,
+      "balance_owed_by_guests": 37837,
+      "credits_owed_to_guests": 1576,
+      "first_check_in": "2026-06-30",
+      "last_check_in": "2027-03-24"
+    },
+    "known_discrepancies": [
+      "Credits total: two $788 credits = $1,576; snapshot summary states $1,575 ($1 rounding).",
+      "Kristina Ketting (id 23): paid $8,789 vs gross $5,729 — overpaid ~$3,060, listed balance $0. Verify and refund/credit.",
+      "John Gavan RMP (id 9): paid $4,576 vs gross $4,462 — overpaid ~$114. Verify.",
+      "ids 3 and 10 are $0 bookings — confirm comp vs. data error before honoring.",
+      "CLAUDE.md priority list cites slightly different dates/amounts for some guests (e.g., Girl Get After It, Lauren Hickey, Dreama Walton) — those appear to reference check-out dates. This file follows the detailed snapshot table."
+    ],
+    "status_legend": {
+      "fully_paid": "No balance; reconfirm only (email version A).",
+      "balance_owed": "Guest owes money; send payment request (email version B).",
+      "credit_owed": "SIG owes guest a credit; apply to stay (email version C).",
+      "verify": "$0 or anomalous record; confirm before acting."
+    }
+  },
+  "properties": {
+    "LT": { "name": "Lost Trail Lodge", "location": "Coldstream Canyon, CA (near Truckee)", "entity": "Lost Trail Lodge, LLC" },
+    "RMP": { "name": "Thelma Hut", "location": "Red Mountain Pass, CO (San Juan Mountains)", "entity": "Thelma Hut, LLC" }
+  },
+  "bookings": [
+    { "id": 1,  "guest": "Amy Degenhard",              "property": "RMP", "check_in": "2026-06-30", "check_out": "2026-07-02", "gross": 1513,  "paid": 2301, "balance": -788,  "source": "Website", "status": "credit_owed", "priority": true,  "notes": "FIRST CHECK-IN. $788 credit owed to guest. Resolve before arrival." },
+    { "id": 2,  "guest": "Vyacheslav Strogolov",       "property": "RMP", "check_in": "2026-07-04", "check_out": "2026-07-06", "gross": 2900,  "paid": 0,    "balance": 2900,  "source": "HipCamp", "status": "balance_owed", "priority": true,  "notes": "Platform-controlled booking. Coordinate with HipCamp to reroute before billing guest directly." },
+    { "id": 3,  "guest": "William Anuszewski",         "property": "RMP", "check_in": "2026-07-06", "check_out": "2026-07-08", "gross": 0,     "paid": 0,    "balance": 0,     "source": "Website", "status": "verify",       "priority": false, "notes": "$0 booking — verify comp vs. error." },
+    { "id": 4,  "guest": "John Gavan",                 "property": "LT",  "check_in": "2026-07-10", "check_out": "2026-07-12", "gross": 4272,  "paid": 4272, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "VIP repeat guest (booking 1 of 3)." },
+    { "id": 5,  "guest": "Sarah Franke",               "property": "RMP", "check_in": "2026-07-11", "check_out": "2026-07-12", "gross": 1830,  "paid": 1830, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 6,  "guest": "John Gavan",                 "property": "LT",  "check_in": "2026-07-13", "check_out": "2026-07-15", "gross": 3204,  "paid": 3204, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "VIP repeat guest (booking 2 of 3)." },
+    { "id": 7,  "guest": "Matthew Calvin",             "property": "RMP", "check_in": "2026-07-20", "check_out": "2026-07-22", "gross": 2704,  "paid": 2704, "balance": 0,     "source": "Import",  "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 8,  "guest": "Max Keeler",                 "property": "LT",  "check_in": "2026-07-24", "check_out": "2026-07-26", "gross": 5340,  "paid": 5340, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 9,  "guest": "John Gavan",                 "property": "RMP", "check_in": "2026-07-27", "check_out": "2026-07-30", "gross": 4462,  "paid": 4576, "balance": 0,     "source": "Email",   "status": "fully_paid",   "priority": false, "notes": "VIP repeat guest (booking 3 of 3, different property). Paid ~$114 over gross — verify." },
+    { "id": 10, "guest": "Perry McCormac",             "property": "RMP", "check_in": "2026-07-30", "check_out": "2026-08-02", "gross": 0,     "paid": 0,    "balance": 0,     "source": "Website", "status": "verify",       "priority": false, "notes": "$0 booking — verify comp vs. error." },
+    { "id": 11, "guest": "Lisa Jenkins",              "property": "LT",  "check_in": "2026-07-31", "check_out": "2026-08-03", "gross": 6165,  "paid": 6165, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 12, "guest": "Scott Waterstredt",          "property": "RMP", "check_in": "2026-08-02", "check_out": "2026-08-04", "gross": 2974,  "paid": 2974, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 13, "guest": "Nicole Valdanbrini",         "property": "RMP", "check_in": "2026-08-04", "check_out": "2026-08-06", "gross": 2036,  "paid": 2824, "balance": -788,  "source": "Email",   "status": "credit_owed",  "priority": true,  "notes": "$788 credit owed to guest." },
+    { "id": 14, "guest": "Maryanna Saenko",            "property": "LT",  "check_in": "2026-08-07", "check_out": "2026-08-10", "gross": 7009,  "paid": 7009, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 15, "guest": "Mac Kliman",                 "property": "RMP", "check_in": "2026-08-17", "check_out": "2026-08-19", "gross": 2288,  "paid": 2288, "balance": 0,     "source": "Phone",   "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 16, "guest": "Kaitlyn Schappert",          "property": "RMP", "check_in": "2026-08-20", "check_out": "2026-08-23", "gross": 4576,  "paid": 4576, "balance": 0,     "source": "Email",   "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 17, "guest": "Dreama Walton",              "property": "RMP", "check_in": "2026-08-28", "check_out": "2026-08-30", "gross": 3546,  "paid": 500,  "balance": 3046,  "source": "Email",   "status": "balance_owed", "priority": true,  "notes": "Invoice now." },
+    { "id": 18, "guest": "Erik Hermstad",              "property": "RMP", "check_in": "2026-09-07", "check_out": "2026-09-10", "gross": 5235,  "paid": 5235, "balance": 0,     "source": "Import",  "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 19, "guest": "Jim Zellers",                "property": "LT",  "check_in": "2026-09-07", "check_out": "2026-09-10", "gross": 6675,  "paid": 1001, "balance": 5674,  "source": "Email",   "status": "balance_owed", "priority": true,  "notes": "Repeat guest, known to Matt. Most urgent owed-balance by date." },
+    { "id": 20, "guest": "Alex Lawwill",               "property": "RMP", "check_in": "2026-09-10", "check_out": "2026-09-13", "gross": 5148,  "paid": 5148, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 21, "guest": "Matt Biggar",                "property": "LT",  "check_in": "2026-09-10", "check_out": "2026-09-13", "gross": 7343,  "paid": 7343, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 22, "guest": "Angela Robine",              "property": "RMP", "check_in": "2026-09-18", "check_out": "2026-09-20", "gross": 2548,  "paid": 2548, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 23, "guest": "Kristina Ketting",           "property": "LT",  "check_in": "2026-09-25", "check_out": "2026-09-28", "gross": 5729,  "paid": 8789, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": true,  "notes": "OVERPAID by ~$3,060. Verify account and refund or credit." },
+    { "id": 24, "guest": "Lauren Hickey",              "property": "LT",  "check_in": "2027-02-09", "check_out": "2027-02-12", "gross": 3338,  "paid": 3338, "balance": 0,     "source": "Website", "status": "fully_paid",   "priority": false, "notes": "Booking 1 of 2 (consecutive)." },
+    { "id": 25, "guest": "Ashley Hanbury",             "property": "RMP", "check_in": "2027-02-11", "check_out": "2027-02-14", "gross": 3054,  "paid": 500,  "balance": 2554,  "source": "Website", "status": "balance_owed", "priority": true,  "notes": "" },
+    { "id": 26, "guest": "Lauren Hickey",              "property": "LT",  "check_in": "2027-02-12", "check_out": "2027-02-15", "gross": 8010,  "paid": 500,  "balance": 7510,  "source": "Website", "status": "balance_owed", "priority": true,  "notes": "Booking 2 of 2 (consecutive). Largest single-guest balance after Girl Get After It." },
+    { "id": 27, "guest": "Chrystalina Roberts-Miller", "property": "RMP", "check_in": "2027-03-05", "check_out": "2027-03-07", "gross": 4233,  "paid": 500,  "balance": 3733,  "source": "Email",   "status": "balance_owed", "priority": true,  "notes": "" },
+    { "id": 28, "guest": "Marisa Mendenhall",          "property": "RMP", "check_in": "2027-03-14", "check_out": "2027-03-16", "gross": 3154,  "paid": 3154, "balance": 0,     "source": "Phone",   "status": "fully_paid",   "priority": false, "notes": "" },
+    { "id": 29, "guest": "Girl Get After It",          "property": "LT",  "check_in": "2027-03-24", "check_out": "2027-03-27", "gross": 16020, "paid": 3600, "balance": 12420, "source": "Email",   "status": "balance_owed", "priority": true,  "notes": "LARGEST BOOKING — 12-guest group. Largest single balance. Handle personally." }
+  ]
+}

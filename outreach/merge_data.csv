@@ -1,0 +1,30 @@
+id,email_version,guest,first_name,email,lodge,location,check_in,check_out,balance_due,credit,payment_link,priority,channel_note,notes
+1,C,Amy Degenhard,Amy,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","June 30, 2026","July 2, 2026",$0,$788,,yes,,FIRST CHECK-IN. $788 credit owed to guest. Resolve before arrival.
+2,B,Vyacheslav Strogolov,Vyacheslav,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 4, 2026","July 6, 2026","$2,900",,,yes,Booked via HipCamp — coordinate through HipCamp before billing directly.,Platform-controlled booking. Coordinate with HipCamp to reroute before billing guest directly.
+3,VERIFY,William Anuszewski,William,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 6, 2026","July 8, 2026",$0,,,,,$0 booking — verify comp vs. error.
+4,A,John Gavan,John,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","July 10, 2026","July 12, 2026",$0,,,,,VIP repeat guest (booking 1 of 3).
+5,A,Sarah Franke,Sarah,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 11, 2026","July 12, 2026",$0,,,,,
+6,A,John Gavan,John,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","July 13, 2026","July 15, 2026",$0,,,,,VIP repeat guest (booking 2 of 3).
+7,A,Matthew Calvin,Matthew,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 20, 2026","July 22, 2026",$0,,,,,
+8,A,Max Keeler,Max,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","July 24, 2026","July 26, 2026",$0,,,,,
+9,A,John Gavan,John,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 27, 2026","July 30, 2026",$0,,,,,"VIP repeat guest (booking 3 of 3, different property). Paid ~$114 over gross — verify."
+10,VERIFY,Perry McCormac,Perry,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","July 30, 2026","August 2, 2026",$0,,,,,$0 booking — verify comp vs. error.
+11,A,Lisa Jenkins,Lisa,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","July 31, 2026","August 3, 2026",$0,,,,,
+12,A,Scott Waterstredt,Scott,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","August 2, 2026","August 4, 2026",$0,,,,,
+13,C,Nicole Valdanbrini,Nicole,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","August 4, 2026","August 6, 2026",$0,$788,,yes,,$788 credit owed to guest.
+14,A,Maryanna Saenko,Maryanna,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","August 7, 2026","August 10, 2026",$0,,,,,
+15,A,Mac Kliman,Mac,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","August 17, 2026","August 19, 2026",$0,,,,,
+16,A,Kaitlyn Schappert,Kaitlyn,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","August 20, 2026","August 23, 2026",$0,,,,,
+17,B,Dreama Walton,Dreama,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","August 28, 2026","August 30, 2026","$3,046",,,yes,,Invoice now.
+18,A,Erik Hermstad,Erik,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","September 7, 2026","September 10, 2026",$0,,,,,
+19,B,Jim Zellers,Jim,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","September 7, 2026","September 10, 2026","$5,674",,,yes,"High-value — handle personally, not a templated send.","Repeat guest, known to Matt. Most urgent owed-balance by date."
+20,A,Alex Lawwill,Alex,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","September 10, 2026","September 13, 2026",$0,,,,,
+21,A,Matt Biggar,Matt,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","September 10, 2026","September 13, 2026",$0,,,,,
+22,A,Angela Robine,Angela,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","September 18, 2026","September 20, 2026",$0,,,,,
+23,A,Kristina Ketting,Kristina,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","September 25, 2026","September 28, 2026",$0,,,yes,,"OVERPAID by ~$3,060. Verify account and refund or credit."
+24,A,Lauren Hickey,Lauren,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","February 9, 2027","February 12, 2027",$0,,,,,Booking 1 of 2 (consecutive).
+25,B,Ashley Hanbury,Ashley,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","February 11, 2027","February 14, 2027","$2,554",,,yes,,
+26,B,Lauren Hickey,Lauren,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","February 12, 2027","February 15, 2027","$7,510",,,yes,"High-value — handle personally, not a templated send.",Booking 2 of 2 (consecutive). Largest single-guest balance after Girl Get After It.
+27,B,Chrystalina Roberts-Miller,Chrystalina,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","March 5, 2027","March 7, 2027","$3,733",,,yes,,
+28,A,Marisa Mendenhall,Marisa,,Thelma Hut,"Red Mountain Pass, CO (San Juan Mountains)","March 14, 2027","March 16, 2027",$0,,,,,
+29,B,Girl Get After It,Girl,,Lost Trail Lodge,"Coldstream Canyon, CA (near Truckee)","March 24, 2027","March 27, 2027","$12,420",,,yes,"High-value — handle personally, not a templated send.",LARGEST BOOKING — 12-guest group. Largest single balance. Handle personally.

@@ -1,0 +1,33 @@
+Subject: Your {{lodge}} reservation is safe — and how to settle your balance
+
+Hi {{first_name}},
+
+When Campfire Ranch closed, you may have gotten a note that your reservation was
+cancelled. Here's the truth: **your stay is safe.** The lodge is owned by Stok
+Investment Group, and we're now operating it directly — and honoring your booking.
+
+Your reservation:
+
+  • {{lodge}} — {{location}}
+  • Check-in:  {{check_in}}
+  • Check-out: {{check_out}}
+  • Remaining balance: {{balance_due}}
+
+To lock everything in:
+
+  1. Reply to confirm you still want these dates.
+  2. Settle your balance with this secure link: {{payment_link}}
+  3. We'll send a short guest agreement, then your arrival details closer to the date.
+
+A note on anything you already paid Campfire: those funds were held by Campfire,
+not by us, and we're still working through what transferred. I don't want that to
+get in the way of your trip — if you have any concern about your balance, reply and
+we'll work it out together, person to person.
+
+Looking forward to hosting you at {{lodge}}.
+
+{{sender_name}}
+Stok Investment Group
+{{reservations_email}}
+
+P.S. You can always find the latest at {{rescue_url}}.

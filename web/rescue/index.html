@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-property="both">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your reservation is safe — Lost Trail Lodge &amp; Thelma Hut</title>
+  <meta name="description" content="An update for guests of Campfire Ranch. Your reservation at Lost Trail Lodge or Thelma Hut is being honored under new management by Stok Investment Group. Here's what to do next." />
+  <meta name="robots" content="noindex" />
+  <!-- noindex while staged; remove before public launch -->
+  <meta property="og:title" content="Your reservation is safe" />
+  <meta property="og:description" content="Your booking at Lost Trail Lodge or Thelma Hut is being honored under new management. Here's what to do next." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1f4d3a" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-property="both">
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="SIG Lodges home">
+        <span class="brand__mark" aria-hidden="true">▲</span>
+        <span class="brand__text">SIG&nbsp;Lodges</span>
+      </a>
+      <span class="topbar__sub">Lost Trail Lodge · Thelma Hut</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">An update for guests of Campfire Ranch</p>
+        <h1 class="hero__title">Your reservation<br />is safe.</h1>
+        <p class="hero__lede">
+          Campfire Ranch stopped operating on June&nbsp;18, 2026. The lodges themselves
+          haven't gone anywhere — they're owned by <strong>Stok Investment Group</strong>,
+          and we're now running them directly. <strong>We intend to honor your dates.</strong>
+          Here's exactly what to do next.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#confirm">Confirm my reservation</a>
+          <a class="btn btn--ghost" href="#balance">Pay my balance</a>
+        </div>
+        <p class="hero__trust">Operated by Stok Investment Group · Lost Trail Lodge, LLC · Thelma Hut, LLC</p>
+      </div>
+    </section>
+
+    <!-- PROPERTY SELECTOR -->
+    <section class="selector" aria-label="Choose your lodge">
+      <div class="wrap">
+        <p class="selector__q">Which lodge is your booking for?</p>
+        <div class="selector__btns" role="group" aria-label="Select your lodge">
+          <button type="button" class="chip" data-select="lt">Lost Trail Lodge<small>Coldstream Canyon, CA</small></button>
+          <button type="button" class="chip" data-select="rmp">Thelma Hut<small>Red Mountain Pass, CO</small></button>
+          <button type="button" class="chip" data-select="both">Not sure</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT HAPPENED -->
+    <section class="section">
+      <div class="wrap narrow">
+        <h2>What happened</h2>
+        <p>
+          Campfire Ranch was the company that operated Lost Trail Lodge and Thelma Hut.
+          On June&nbsp;18, 2026 it dissolved and notified guests that upcoming reservations
+          were cancelled.
+        </p>
+        <p>
+          <strong>The properties are owned by Stok Investment Group (SIG)</strong> — we're the
+          landlord, and now the operator. Rather than let your trip fall through, we're stepping
+          in to run both lodges ourselves and to honor as many existing bookings as we can.
+        </p>
+        <p>
+          We know a cancellation email is alarming. Our goal is simple: get you reconfirmed,
+          answer your questions honestly, and make sure your trip still happens.
+        </p>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <h2 class="center">What to do — three quick steps</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <h3>Reconfirm your stay</h3>
+            <p>Tell us you'd still like your dates. Takes a minute — just the form below.</p>
+            <a class="link-arrow" href="#confirm">Reconfirm now →</a>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <h3>Sign a quick guest agreement</h3>
+            <p>After you reconfirm, we'll email a short agreement to sign — standard outdoor-stay terms under the new operator.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <h3>Settle up</h3>
+            <p>Pay any remaining balance through your secure link, or — if you have a credit on file — we'll apply it to your stay.</p>
+            <a class="link-arrow" href="#balance">Balance &amp; credits →</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONFIRM FORM -->
+    <section class="section" id="confirm">
+      <div class="wrap narrow">
+        <h2>Reconfirm your reservation</h2>
+        <p class="muted">We'll use this only to reconfirm your booking and follow up personally. Your details are never posted publicly.</p>
+
+        <form id="confirmForm" class="form" novalidate>
+          <div class="field">
+            <label for="name">Full name <span class="req">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="field">
+            <label for="lodge">Which lodge <span class="req">*</span></label>
+            <select id="lodge" name="lodge" required>
+              <option value="">Select…</option>
+              <option value="Lost Trail Lodge">Lost Trail Lodge (CA)</option>
+              <option value="Thelma Hut">Thelma Hut (CO)</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="checkin">Check-in date (if you know it)</label>
+            <input id="checkin" name="checkin" type="date" />
+          </div>
+          <div class="field">
+            <label for="ref">Booking reference (optional)</label>
+            <input id="ref" name="ref" type="text" inputmode="text" placeholder="From your Campfire confirmation" />
+          </div>
+          <div class="field field--check">
+            <input id="needlink" name="needlink" type="checkbox" />
+            <label for="needlink">I have a balance to pay and need my payment link</label>
+          </div>
+          <div class="field">
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Reconfirm my reservation</button>
+          <p id="formStatus" class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- BALANCE / PAYMENT -->
+    <section class="section section--alt" id="balance">
+      <div class="wrap narrow">
+        <h2>Balances &amp; credits</h2>
+        <p>
+          Every guest with a remaining balance is being emailed a <strong>secure payment link</strong>
+          for that exact amount. Please check your inbox (and spam folder) for a message from us.
+        </p>
+        <p>
+          Some guests have a <strong>credit on file</strong> — if that's you, we'll apply it to your
+          stay automatically and confirm the amount when you reconfirm.
+        </p>
+        <div class="callout">
+          <p><strong>Can't find your payment link?</strong> Tick "I need my payment link" on the
+          form above, or email us and we'll send it right over.</p>
+          <a class="btn btn--primary" href="#confirm">Request my payment link</a>
+          <a class="btn btn--ghost contact-email" href="#contact">Email us instead</a>
+        </div>
+        <p class="muted small">
+          A note on payments you made to Campfire Ranch: those funds were held by Campfire, not SIG.
+          We don't want anyone to feel stuck — reach out and we'll work with you personally so your
+          trip still happens.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap narrow">
+        <h2>Questions, answered honestly</h2>
+        <div class="faq">
+          <details>
+            <summary>Is my reservation really still happening?</summary>
+            <p>That's our intent. We're honoring as many existing bookings as we can. Reconfirm with
+            the form above and we'll lock in your dates and follow up personally.</p>
+          </details>
+          <details>
+            <summary>I already paid Campfire Ranch — what about that money?</summary>
+            <p>Many guests paid Campfire in advance. Those funds were held by Campfire Ranch, not by
+            Stok Investment Group, and we're still working through what transferred. We won't leave
+            you stranded — contact us and we'll work with you individually on applying a credit or
+            arranging payment so your trip happens.</p>
+          </details>
+          <details>
+            <summary>Will my dates or price change?</summary>
+            <p>We're working to keep your original dates. We'll confirm your specifics with you
+            directly when you reconfirm; if anything needs to change, you'll hear it from a human
+            first, not a surprise email.</p>
+          </details>
+          <details>
+            <summary>Who is Stok Investment Group?</summary>
+            <p>SIG owns both properties — Lost Trail Lodge in Coldstream Canyon, California, and
+            Thelma Hut on Red Mountain Pass, Colorado. We were the landlord; we're now the operator,
+            running both lodges directly.</p>
+          </details>
+          <details>
+            <summary>What if I need to cancel or change my trip?</summary>
+            <p>Just tell us. Reconfirm or email us and we'll talk it through — no run-around.</p>
+          </details>
+          <details>
+            <summary>How do I reach a real person?</summary>
+            <p>Use the form above or email us directly at <a class="contact-email" href="#contact">our reservations inbox</a>. A person reads every message.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap narrow center">
+        <h2>Talk to a person</h2>
+        <p>We'd rather hear from you than have you wonder. Reach out any time.</p>
+        <p class="contact__email"><a id="emailLink" href="#">loading…</a></p>
+        <p class="muted small">Lost Trail Lodge, LLC &amp; Thelma Hut, LLC · Stok Investment Group</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Stok Investment Group</span>
+      <span class="footer__entities">Lost Trail Lodge, LLC · Thelma Hut, LLC</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

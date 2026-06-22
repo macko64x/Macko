@@ -1,0 +1,31 @@
+Subject: Your {{lodge}} reservation is safe — plus a credit on your account
+
+Hi {{first_name}},
+
+You may have received a note that your reservation was cancelled when Campfire
+Ranch closed. **Your stay is safe.** The lodge is owned by Stok Investment Group
+and we're now running it directly — and honoring your booking.
+
+Your reservation:
+
+  • {{lodge}} — {{location}}
+  • Check-in:  {{check_in}}
+  • Check-out: {{check_out}}
+  • Credit on file: {{credit}} — we'll apply this to your stay.
+
+From here:
+
+  1. Reply to confirm you still want these dates.
+  2. We'll apply your {{credit}} credit and confirm the details with you.
+  3. A short guest agreement and arrival info will follow closer to your trip.
+
+If anything has changed or you have questions, just reply — a real person reads
+every message.
+
+Glad to have you with us at {{lodge}}.
+
+{{sender_name}}
+Stok Investment Group
+{{reservations_email}}
+
+P.S. You can always find the latest at {{rescue_url}}.

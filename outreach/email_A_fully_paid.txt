@@ -1,0 +1,31 @@
+Subject: Your {{lodge}} reservation is safe — confirmed under new ownership
+
+Hi {{first_name}},
+
+You may have received a note that your upcoming reservation was cancelled when
+Campfire Ranch closed. I want to clear that up personally: **your stay is safe.**
+
+Campfire operated {{lodge}}, but the lodge itself is owned by Stok Investment
+Group — and we're now running it directly. We're honoring your booking:
+
+  • {{lodge}} — {{location}}
+  • Check-in:  {{check_in}}
+  • Check-out: {{check_out}}
+  • Balance due: $0 — you're fully paid. Thank you.
+
+Two quick things from here:
+
+  1. Reply to confirm you still want these dates (a quick "yes" is perfect).
+  2. We'll send a short guest agreement to sign, then your access details and
+     arrival info closer to your trip.
+
+Nothing else is needed right now. If anything has changed for you, or you have
+questions, just reply — a real person (me) reads every email.
+
+We're glad to have you, and we're looking forward to hosting you at {{lodge}}.
+
+{{sender_name}}
+Stok Investment Group
+{{reservations_email}}
+
+P.S. You can always find the latest at {{rescue_url}}.
