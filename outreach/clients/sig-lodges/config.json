@@ -1,0 +1,55 @@
+{
+  "client_id": "sig-lodges",
+  "brand": "SIG Lodges",
+  "globals": {
+    "sender_name": "Matt",
+    "reservations_email": "macko@stok.com",
+    "rescue_url": "https://REPLACE-with-deployed-rescue-page"
+  },
+  "currency_symbol": "$",
+  "data_file": "data/bookings.json",
+  "records_key": "bookings",
+  "output_file": "outreach/merge_data.csv",
+  "templates_dir": "outreach",
+  "template_files": {
+    "A": "email_A_fully_paid.txt",
+    "B": "email_B_balance_owed.txt",
+    "C": "email_C_credit_owed.txt"
+  },
+  "fields": {
+    "id": "id",
+    "name": "guest",
+    "email": "email",
+    "status": "status",
+    "balance": "balance"
+  },
+  "status_to_version": {
+    "fully_paid": "A",
+    "balance_owed": "B",
+    "credit_owed": "C",
+    "verify": "VERIFY"
+  },
+  "default_version": "REVIEW",
+  "lookup": {
+    "from_field": "property",
+    "table_key": "properties",
+    "as": { "lodge": "name", "location": "location" }
+  },
+  "date_fields": ["check_in", "check_out"],
+  "flag_fields": ["priority"],
+  "passthrough_fields": ["notes"],
+  "personal_touch_at": 5000,
+  "personal_touch_note": "High-value — handle personally, not a templated send.",
+  "special_cases": [
+    {
+      "when_field": "source",
+      "equals": "HipCamp",
+      "note": "Booked via HipCamp — coordinate through HipCamp before billing directly."
+    }
+  ],
+  "columns": [
+    "id", "email_version", "guest", "first_name", "email",
+    "lodge", "location", "check_in", "check_out",
+    "balance_due", "credit", "payment_link", "priority", "channel_note", "notes"
+  ]
+}

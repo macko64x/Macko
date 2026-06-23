@@ -1,0 +1,13 @@
+Subject: A credit is waiting on your {{studio_name}} account
+
+Hi {{first_name}},
+
+Good news — you have a credit of {{credit}} on your {{studio_name}}
+({{location}}) account. We'll apply it automatically toward your next renewal on
+{{renewal_date}}, so there's nothing you need to do.
+
+If you'd prefer to use it differently, just reply and let us know.
+
+Thanks for your patience,
+{{sender_name}}
+{{reservations_email}}

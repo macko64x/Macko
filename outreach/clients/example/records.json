@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "note": "Dummy data for the 'example' test client. Safe to share — no real PII. Copy this folder to start a new client."
+  },
+  "segments": {
+    "downtown": { "name": "Downtown Studio", "location": "Austin, TX" },
+    "lakeside": { "name": "Lakeside Studio", "location": "Bend, OR" }
+  },
+  "records": [
+    {
+      "id": 1,
+      "customer": "Jordan Lee",
+      "studio": "downtown",
+      "status": "active_paid",
+      "balance": 0,
+      "renewal_date": "2026-07-15",
+      "source": "Direct",
+      "vip": true,
+      "notes": "Founding member — thank personally."
+    },
+    {
+      "id": 2,
+      "customer": "Sam Rivera",
+      "studio": "lakeside",
+      "status": "past_due",
+      "balance": 240,
+      "renewal_date": "2026-07-01",
+      "source": "ClassPass",
+      "vip": false,
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "customer": "Casey Kim",
+      "studio": "downtown",
+      "status": "credit_due",
+      "balance": -50,
+      "renewal_date": "2026-08-01",
+      "source": "Direct",
+      "vip": false,
+      "notes": "Credit owed for a closed-day refund."
+    },
+    {
+      "id": 4,
+      "customer": "Pat Morgan",
+      "studio": "lakeside",
+      "status": "verify",
+      "balance": 0,
+      "renewal_date": "2026-07-20",
+      "source": "Direct",
+      "vip": false,
+      "notes": "$0 record — confirm comp vs. error before contacting."
+    }
+  ]
+}

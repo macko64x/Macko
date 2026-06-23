@@ -1,0 +1,55 @@
+{
+  "client_id": "example",
+  "brand": "Example Studios",
+  "globals": {
+    "sender_name": "Alex",
+    "reservations_email": "hello@example.com",
+    "rescue_url": "https://example.com/welcome"
+  },
+  "currency_symbol": "$",
+  "data_file": "outreach/clients/example/records.json",
+  "records_key": "records",
+  "output_file": "outreach/clients/example/merge_data.csv",
+  "templates_dir": "outreach/clients/example/templates",
+  "template_files": {
+    "A": "email_A.txt",
+    "B": "email_B.txt",
+    "C": "email_C.txt"
+  },
+  "fields": {
+    "id": "id",
+    "name": "customer",
+    "email": "email",
+    "status": "status",
+    "balance": "balance"
+  },
+  "status_to_version": {
+    "active_paid": "A",
+    "past_due": "B",
+    "credit_due": "C",
+    "verify": "VERIFY"
+  },
+  "default_version": "REVIEW",
+  "lookup": {
+    "from_field": "studio",
+    "table_key": "segments",
+    "as": { "studio_name": "name", "location": "location" }
+  },
+  "date_fields": ["renewal_date"],
+  "flag_fields": ["vip"],
+  "passthrough_fields": ["notes"],
+  "personal_touch_at": 200,
+  "personal_touch_note": "Larger balance — call before emailing.",
+  "special_cases": [
+    {
+      "when_field": "source",
+      "equals": "ClassPass",
+      "note": "ClassPass member — reconcile via ClassPass before any direct charge."
+    }
+  ],
+  "columns": [
+    "id", "email_version", "customer", "first_name", "email",
+    "studio_name", "location", "renewal_date",
+    "balance_due", "credit", "payment_link", "vip", "channel_note", "notes"
+  ]
+}

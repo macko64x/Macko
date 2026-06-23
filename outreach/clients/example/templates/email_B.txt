@@ -1,0 +1,16 @@
+Subject: A small balance on your {{studio_name}} membership
+
+Hi {{first_name}},
+
+Thanks for being part of {{studio_name}} ({{location}}). Our records show an
+outstanding balance of {{balance_due}} on your account, due before your next
+renewal on {{renewal_date}}.
+
+You can take care of it here: {{payment_link}}
+
+If that balance doesn't look right, reply and we'll review it together — no
+worries either way.
+
+Thanks,
+{{sender_name}}
+{{reservations_email}}

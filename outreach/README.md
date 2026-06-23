@@ -4,12 +4,23 @@ Drafts for reaching the 29 inherited guests. **Nothing here sends automatically.
 These are ready for a human to review, personalize, and send once we have guest
 email addresses (from the Cloudbeds export) and per-guest payment links.
 
+> **This is now a reusable, multi-client engine.** SIG Lodges is one client
+> (`clients/sig-lodges/`); copy `clients/example/` to onboard another. Run it
+> inside Claude with the `/outreach` skill, or on the CLI. Config reference and
+> "add a client" steps: [`clients/README.md`](clients/README.md). Skill:
+> [`../.claude/skills/outreach/SKILL.md`](../.claude/skills/outreach/SKILL.md).
+
 ## Files
-- `email_A_fully_paid.txt` — guest owes nothing; reconfirm only.
-- `email_B_balance_owed.txt` — guest owes a balance; includes payment link.
-- `email_C_credit_owed.txt` — SIG owes the guest a credit; applied to stay.
-- `build_merge.py` — reads `../data/bookings.json`, writes `merge_data.csv`.
-- `merge_data.csv` — generated mail-merge sheet (one row per booking).
+- `build_merge.py` — the generic, config-driven engine (`--client`, `--check`, `--drafts`, `--list`).
+- `smoke_test.py` — fast checks for the engine + the `example` client.
+- `clients/<id>/config.json` — per-client config (paths, status→version map, thresholds, special cases).
+- `email_A_fully_paid.txt` — SIG: guest owes nothing; reconfirm only.
+- `email_B_balance_owed.txt` — SIG: guest owes a balance; includes payment link.
+- `email_C_credit_owed.txt` — SIG: SIG owes the guest a credit; applied to stay.
+- `merge_data.csv` — SIG's generated mail-merge sheet (one row per booking).
+
+The SIG client config (`clients/sig-lodges/config.json`) points at these existing
+files, so the output is byte-identical to the original single-purpose script.
 
 ## How the version is chosen (from `data/bookings.json` status)
 | status         | version | meaning                                  |
@@ -31,8 +42,11 @@ Set these three globals once before sending:
 
 ## Regenerate the merge sheet
 ```
-python3 outreach/build_merge.py
+python3 outreach/build_merge.py --client sig-lodges            # write merge_data.csv
+python3 outreach/build_merge.py --client sig-lodges --drafts   # also render review drafts (no send)
 ```
+Drafts land in `outreach/drafts/` (gitignored, may contain PII) and are marked
+`READY`/`REVIEW` — with no guest emails loaded yet, all rows are `REVIEW`.
 
 ## SEND CHECKLIST (do not skip)
 - [ ] **Guest emails** filled into `merge_data.csv` (need the Cloudbeds export).

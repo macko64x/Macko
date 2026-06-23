@@ -1,0 +1,5 @@
+id,email_version,customer,first_name,email,studio_name,location,renewal_date,balance_due,credit,payment_link,vip,channel_note,notes
+1,A,Jordan Lee,Jordan,,Downtown Studio,"Austin, TX","July 15, 2026",$0,,,yes,,Founding member — thank personally.
+2,B,Sam Rivera,Sam,,Lakeside Studio,"Bend, OR","July 1, 2026",$240,,,,ClassPass member — reconcile via ClassPass before any direct charge. Larger balance — call before emailing.,
+3,C,Casey Kim,Casey,,Downtown Studio,"Austin, TX","August 1, 2026",$0,$50,,,,Credit owed for a closed-day refund.
+4,VERIFY,Pat Morgan,Pat,,Lakeside Studio,"Bend, OR","July 20, 2026",$0,,,,,$0 record — confirm comp vs. error before contacting.

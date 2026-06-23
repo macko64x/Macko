@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code personal (local) settings — keep the shared skill, ignore local prefs
+.claude/settings.local.json
+
+# Generated outreach drafts — regenerable, may contain guest/customer PII. Never commit.
+outreach/drafts/
+outreach/clients/*/drafts/

@@ -1,0 +1,12 @@
+Subject: You're all set at {{studio_name}}
+
+Hi {{first_name}},
+
+Quick note to confirm your membership at {{studio_name}} ({{location}}) is active
+and paid in full — nothing for you to do. Your next renewal is {{renewal_date}}.
+
+If anything looks off, just reply to this email and we'll sort it out.
+
+See you in the studio,
+{{sender_name}}
+{{reservations_email}}
